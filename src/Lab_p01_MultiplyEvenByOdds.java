@@ -23,6 +23,9 @@ public class Lab_p01_MultiplyEvenByOdds {
     }
 
     static int getSumOfEvenDigits(int n) {
+        if (n < 0) {
+            n = Math.abs(n);
+        }
         int sumEvenDigits = 0;
         while (n > 0) {
             int lastDigit = n % 10;
@@ -38,6 +41,9 @@ public class Lab_p01_MultiplyEvenByOdds {
     }
 
     static int getSumOfOddDigits(int n) {
+        if (n < 0) {
+            n = Math.abs(n);
+        }
         int sumOddDigits = 0;
         while (n > 0) {
             int lastDigit = n % 10;
