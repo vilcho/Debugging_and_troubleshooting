@@ -44,7 +44,7 @@ public class Lab_p03_PriceChangeAlert {
 
     static String calcDetails(double temporaryPreviousPrice, double newPrice, double percentage) {
         String details = "";
-        NumberFormat formatter = new DecimalFormat("###########.##");
+        NumberFormat formatter = new DecimalFormat("###########.#######################");
         if (percentage != 0 && !String.valueOf(percentage).equals("NaN")) {
             details = formatter.format(temporaryPreviousPrice) + " to " + formatter.format(newPrice);
         } else {
